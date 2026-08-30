@@ -1,0 +1,20 @@
+# Multi-Agent & LLM Framework
+langchain>=0.1.0
+langgraph>=0.0.20
+langchain-openai>=0.0.5  # Or whichever specific LLM provider package you used
+
+# Formal Verification
+z3-solver>=4.12.2
+
+# Simulation & Orchestration
+simpy>=4.1.1
+
+# Data Processing & Graph Topologies
+pandas>=2.0.0
+numpy>=1.24.0
+networkx>=3.0
+
+# Visualization & Notebook Support
+matplotlib>=3.7.1
+seaborn>=0.12.2
+jupyter>=1.0.0
