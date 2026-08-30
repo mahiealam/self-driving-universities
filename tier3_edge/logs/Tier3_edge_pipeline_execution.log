@@ -1,0 +1,379 @@
+2026-08-29 12:59:38 [INFO] Directory structure initialized in /workspace/notebooks/WP34-AgenticAI
+2026-08-29 12:59:38 [INFO] Logging active. Output is being saved to /workspace/notebooks/WP34-AgenticAI/logs/pipeline_execution.log
+2026-08-29 12:59:38 [INFO] Matplotlib and Seaborn configured for 300 DPI journal-ready exports.
+2026-08-29 12:59:38 [INFO] Reproducibility protocol enforced. Global Seed: 42
+2026-08-29 12:59:38 [INFO] Block 1 Execution Complete.
+2026-08-29 12:59:38 [INFO] YAML Configuration successfully parsed.
+2026-08-29 12:59:38 [INFO] 
+--- Active Institutional Datasets ---
+2026-08-29 12:59:38 [INFO] [1] Univ_A_Centralized (Nodes: 80, Edges: 120)
+2026-08-29 12:59:38 [INFO] [2] Univ_B_Elective (Nodes: 120, Edges: 60)
+2026-08-29 12:59:38 [INFO] 
+Configuration snapshot saved to: /workspace/notebooks/WP34-AgenticAI/checkpoints/experiment_config_snapshot.json
+2026-08-29 12:59:38 [INFO] Block 2 Execution Complete.
+2026-08-29 12:59:38 [INFO] 
+--- Generating Institutional Graphs ---
+2026-08-29 12:59:38 [INFO] Generating DAG for Univ_A_Centralized...
+2026-08-29 12:59:38 [INFO]   -> Generated: 80 courses, 120 prerequisites.
+2026-08-29 12:59:38 [INFO]   -> Max Prerequisite Depth: 10
+2026-08-29 12:59:39 [INFO] Saved topology figure: /workspace/notebooks/WP34-AgenticAI/figures/Univ_A_Centralized_topology.png
+2026-08-29 12:59:39 [INFO] Generating DAG for Univ_B_Elective...
+2026-08-29 12:59:39 [INFO]   -> Generated: 120 courses, 60 prerequisites.
+2026-08-29 12:59:39 [INFO]   -> Max Prerequisite Depth: 3
+2026-08-29 12:59:40 [INFO] Saved topology figure: /workspace/notebooks/WP34-AgenticAI/figures/Univ_B_Elective_topology.png
+2026-08-29 12:59:40 [INFO] 
+Block 3 Execution Complete.
+2026-08-29 12:59:40 [INFO] 
+--- Saving Graph Data and Generating Populations ---
+2026-08-29 12:59:40 [INFO] [Univ_A_Centralized] Saved curriculum graph to /workspace/notebooks/WP34-AgenticAI/datasets/Univ_A_Centralized_curriculum.graphml
+2026-08-29 12:59:40 [INFO] [Univ_A_Centralized] Generating 10000 synthetic students...
+2026-08-29 12:59:40 [INFO] [Univ_A_Centralized] Saved synthetic population to /workspace/notebooks/WP34-AgenticAI/datasets/Univ_A_Centralized_students.csv
+2026-08-29 12:59:41 [INFO] Saved population distribution figure: /workspace/notebooks/WP34-AgenticAI/figures/Univ_A_Centralized_population_stats.png
+2026-08-29 12:59:41 [INFO] [Univ_B_Elective] Saved curriculum graph to /workspace/notebooks/WP34-AgenticAI/datasets/Univ_B_Elective_curriculum.graphml
+2026-08-29 12:59:41 [INFO] [Univ_B_Elective] Generating 10000 synthetic students...
+2026-08-29 12:59:41 [INFO] [Univ_B_Elective] Saved synthetic population to /workspace/notebooks/WP34-AgenticAI/datasets/Univ_B_Elective_students.csv
+2026-08-29 12:59:42 [INFO] Saved population distribution figure: /workspace/notebooks/WP34-AgenticAI/figures/Univ_B_Elective_population_stats.png
+2026-08-29 12:59:42 [INFO] 
+Block 4 Execution Complete.
+2026-08-29 12:59:42 [INFO] 
+--- Executing Z3 Formal Verification Benchmark ---
+2026-08-29 13:00:04 [INFO] Exported verification benchmark dataset to: /workspace/notebooks/WP34-AgenticAI/analysis/z3_verification_benchmark.csv
+2026-08-29 13:00:05 [INFO] Saved 300 DPI publication figure: /workspace/notebooks/WP34-AgenticAI/figures/z3_verification_benchmark.png
+2026-08-29 13:00:05 [INFO] Block 5 Execution Complete.
+2026-08-29 13:00:05 [INFO] Initializing LangChain: Ubuntu i3 Edge Server (llama3.2) via http://172.17.0.1:11434
+2026-08-29 13:00:05 [INFO] Block 7 Execution Complete for S2 (Edge Node).
+2026-08-29 13:00:05 [INFO] 
+Executing Unit Test for Block 8 Control Loop...
+2026-08-29 13:00:05 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 13:00:05 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 13:00:27 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 13:00:46 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-29 13:00:46 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 40764.31ms) ---
+2026-08-29 13:00:46 [INFO] 
+Metrics Output:
+2026-08-29 13:00:46 [INFO]   llm_attempts: 1
+2026-08-29 13:00:46 [INFO]   z3_verification_calls: 1
+2026-08-29 13:00:46 [INFO]   z3_total_latency_ms: 4.234483989421278
+2026-08-29 13:00:46 [INFO]   fallback_triggered: False
+2026-08-29 13:00:46 [INFO]   final_status: MAS_VERIFIED
+2026-08-29 13:00:46 [INFO]   total_cycle_latency_ms: 40764.308566984255
+2026-08-29 13:00:46 [INFO] 
+Block 8 Execution Complete.
+2026-08-29 13:00:46 [INFO] 
+
+############################################################
+Booting Simulation Environment for Univ_A_Centralized
+############################################################
+2026-08-29 13:00:46 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 1
+==================================================
+2026-08-29 13:00:46 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 13:00:46 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 13:02:49 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 13:21:02 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=192) exceeds room R_7 capacity (108).
+2026-08-29 13:21:02 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=192) exceeds room R_7 capacity (108).
+2026-08-29 13:21:02 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 13:23:08 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 13:34:05 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C14 (demand=186) exceeds room R_15 capacity (120).
+2026-08-29 13:34:05 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C14 (demand=186) exceeds room R_15 capacity (120).
+2026-08-29 13:34:05 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 13:36:10 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 13:36:49 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C14 (demand=186) exceeds room R_15 capacity (120).
+2026-08-29 13:36:49 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C14 (demand=186) exceeds room R_15 capacity (120).
+2026-08-29 13:36:49 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 13:36:49 [INFO] [System] MILP Fallback successful (Latency: 0.36ms).
+2026-08-29 13:36:49 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 2162531.62ms) ---
+2026-08-29 13:36:49 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 2
+==================================================
+2026-08-29 13:36:49 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 13:36:49 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 13:38:54 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 13:56:49 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=127) exceeds room R_7 capacity (108).
+2026-08-29 13:56:49 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=127) exceeds room R_7 capacity (108).
+2026-08-29 13:56:49 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 13:58:54 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 14:09:52 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C11 (demand=174) exceeds room R_12 capacity (169).
+2026-08-29 14:09:52 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C11 (demand=174) exceeds room R_12 capacity (169).
+2026-08-29 14:09:52 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 14:11:57 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 14:18:59 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C6 (demand=128) exceeds room R_7 capacity (108).
+2026-08-29 14:18:59 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C6 (demand=128) exceeds room R_7 capacity (108).
+2026-08-29 14:18:59 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 14:18:59 [INFO] [System] MILP Fallback successful (Latency: 0.90ms).
+2026-08-29 14:18:59 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 2530640.21ms) ---
+2026-08-29 14:18:59 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 3
+==================================================
+2026-08-29 14:18:59 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 14:18:59 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 14:21:04 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 14:38:53 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C12 (demand=182) exceeds room R_12 capacity (169).
+2026-08-29 14:38:53 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C12 (demand=182) exceeds room R_12 capacity (169).
+2026-08-29 14:38:53 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 14:40:58 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 14:48:00 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C4 (demand=281) exceeds room R_5 capacity (180).
+2026-08-29 14:48:00 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C4 (demand=281) exceeds room R_5 capacity (180).
+2026-08-29 14:48:00 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 14:48:06 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 14:55:08 [INFO] [System] Z3 Verification Passed on attempt 3.
+2026-08-29 14:55:08 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 2168472.26ms) ---
+2026-08-29 14:55:08 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 4
+==================================================
+2026-08-29 14:55:08 [INFO] [Univ_A_Centralized] !!! INJECTING STRUCTURAL SHOCK: 20% Classroom Loss !!!
+2026-08-29 14:55:08 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 14:55:08 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 14:57:00 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 15:14:53 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:14:53 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:14:53 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 15:16:50 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 15:18:02 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:18:02 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:18:02 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 15:18:03 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 15:19:14 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:19:14 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C3 (demand=185) exceeds room R_5 capacity (180).
+2026-08-29 15:19:14 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 15:19:14 [INFO] [System] MILP Fallback successful (Latency: 0.61ms).
+2026-08-29 15:19:14 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 1446615.98ms) ---
+2026-08-29 15:19:14 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 5
+==================================================
+2026-08-29 15:19:14 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 15:19:14 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 15:21:07 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 15:40:19 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=181) exceeds room R_7 capacity (108).
+2026-08-29 15:40:19 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=181) exceeds room R_7 capacity (108).
+2026-08-29 15:40:19 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 15:42:16 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 15:47:50 [INFO] [System] Z3 Verification Passed on attempt 2.
+2026-08-29 15:47:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 1715688.70ms) ---
+2026-08-29 15:47:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 6
+==================================================
+2026-08-29 15:47:50 [INFO] [Univ_A_Centralized] !!! INJECTING RESOURCE SHOCK: 20% Faculty Loss !!!
+2026-08-29 15:47:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 15:47:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 15:49:32 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 16:04:06 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=118) exceeds room R_7 capacity (108).
+2026-08-29 16:04:06 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=118) exceeds room R_7 capacity (108).
+2026-08-29 16:04:06 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 16:05:52 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 16:21:00 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C14 (demand=149) exceeds room R_15 capacity (120).
+2026-08-29 16:21:00 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C14 (demand=149) exceeds room R_15 capacity (120).
+2026-08-29 16:21:00 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 16:22:46 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 16:28:38 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C15 (demand=171) exceeds room R_18 capacity (157).
+2026-08-29 16:28:38 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C15 (demand=171) exceeds room R_18 capacity (157).
+2026-08-29 16:28:38 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 16:28:38 [INFO] [System] MILP Fallback successful (Latency: 0.50ms).
+2026-08-29 16:28:38 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 2448112.83ms) ---
+2026-08-29 16:28:38 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 7
+==================================================
+2026-08-29 16:28:38 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 16:28:38 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 16:30:20 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 16:45:04 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 16:45:04 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 16:45:04 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 16:46:51 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 17:00:16 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 17:00:16 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 17:00:16 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 17:02:03 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 17:15:28 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 17:15:28 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=109) exceeds room R_7 capacity (108).
+2026-08-29 17:15:28 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 17:15:28 [INFO] [System] MILP Fallback successful (Latency: 0.33ms).
+2026-08-29 17:15:28 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 2810110.68ms) ---
+2026-08-29 17:15:28 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 8
+==================================================
+2026-08-29 17:15:28 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 17:15:28 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 17:17:13 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 17:39:56 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C7 (demand=145) exceeds room R_7 capacity (108).
+2026-08-29 17:39:56 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C7 (demand=145) exceeds room R_7 capacity (108).
+2026-08-29 17:39:56 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 17:41:44 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 17:47:15 [INFO] [System] Z3 Verification Passed on attempt 2.
+2026-08-29 17:47:15 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 1906610.23ms) ---
+2026-08-29 17:47:15 [INFO] 
+
+############################################################
+Booting Simulation Environment for Univ_B_Elective
+############################################################
+2026-08-29 17:47:15 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 1
+==================================================
+2026-08-29 17:47:15 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 17:47:15 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 17:50:27 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 17:56:38 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C2 (demand=163) exceeds room R_2 capacity (150).
+2026-08-29 17:56:38 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C2 (demand=163) exceeds room R_2 capacity (150).
+2026-08-29 17:56:38 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 17:59:54 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 18:03:35 [INFO] [System] Z3 Verification Passed on attempt 2.
+2026-08-29 18:03:35 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 980253.02ms) ---
+2026-08-29 18:03:35 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 2
+==================================================
+2026-08-29 18:03:35 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 18:03:35 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 18:06:49 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 18:39:06 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 183}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 18:39:06 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 18:42:21 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 19:12:13 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C2 (demand=169) exceeds room R_2 capacity (150).
+2026-08-29 19:12:13 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C2 (demand=169) exceeds room R_2 capacity (150).
+2026-08-29 19:12:13 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 19:15:30 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 19:21:38 [INFO] [System] Z3 Verification Passed on attempt 3.
+2026-08-29 19:21:38 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 4682829.71ms) ---
+2026-08-29 19:21:38 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 3
+==================================================
+2026-08-29 19:21:38 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 19:21:38 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 19:24:52 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 19:57:09 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 127}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 19:57:09 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 20:00:24 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 20:32:40 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 127}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 20:32:40 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 20:35:55 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 21:08:12 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 127}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 21:08:12 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 21:08:12 [INFO] [System] MILP Fallback successful (Latency: 0.60ms).
+2026-08-29 21:08:12 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 6393852.10ms) ---
+2026-08-29 21:08:12 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 4
+==================================================
+2026-08-29 21:08:12 [INFO] [Univ_B_Elective] !!! INJECTING STRUCTURAL SHOCK: 20% Classroom Loss !!!
+2026-08-29 21:08:12 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 21:08:12 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 21:11:09 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 21:32:26 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C2 (demand=202) exceeds room R_2 capacity (150).
+2026-08-29 21:32:26 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C2 (demand=202) exceeds room R_2 capacity (150).
+2026-08-29 21:32:26 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 21:35:30 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 22:07:51 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C2", "room": "R_2", "faculty": "F_2", "time": "T_Mon_1", "enrollment": 0}, {"course": "C3", "room": "R_3", "faculty":... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 22:07:51 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 22:10:49 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 22:11:04 [INFO] [System] Z3 Verification Failed: Verification Error: Empty schedule proposal received.
+2026-08-29 22:11:04 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Verification Error: Empty schedule proposal received.
+2026-08-29 22:11:04 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 22:11:04 [INFO] [System] MILP Fallback successful (Latency: 0.99ms).
+2026-08-29 22:11:04 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 3772014.09ms) ---
+2026-08-29 22:11:04 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 5
+==================================================
+2026-08-29 22:11:04 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 22:11:04 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 22:13:59 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 22:20:35 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C11 (demand=149) exceeds room R_11 capacity (132).
+2026-08-29 22:20:35 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C11 (demand=149) exceeds room R_11 capacity (132).
+2026-08-29 22:20:35 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 22:23:37 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 22:55:57 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 163}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 22:55:57 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-29 22:58:57 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 22:59:17 [INFO] [System] Z3 Verification Failed: Verification Error: Empty schedule proposal received.
+2026-08-29 22:59:17 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Verification Error: Empty schedule proposal received.
+2026-08-29 22:59:17 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-29 22:59:17 [INFO] [System] MILP Fallback successful (Latency: 0.99ms).
+2026-08-29 22:59:17 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 2893093.35ms) ---
+2026-08-29 22:59:17 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 6
+==================================================
+2026-08-29 22:59:17 [INFO] [Univ_B_Elective] !!! INJECTING RESOURCE SHOCK: 20% Faculty Loss !!!
+2026-08-29 22:59:17 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-29 22:59:17 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-29 23:01:56 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-29 23:34:06 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 155}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-29 23:34:06 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-29 23:36:48 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 00:08:58 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 155}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 00:08:58 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-30 00:11:40 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 00:43:50 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 155}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 00:43:50 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-30 00:43:50 [INFO] [System] MILP Fallback successful (Latency: 0.71ms).
+2026-08-30 00:43:50 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 6273096.68ms) ---
+2026-08-30 00:43:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 7
+==================================================
+2026-08-30 00:43:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-30 00:43:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-30 00:46:32 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 01:18:43 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 118}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 01:18:43 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-30 01:21:25 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 01:53:34 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 118}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 01:53:34 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-30 01:56:17 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 02:28:26 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 118}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 02:28:26 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-30 02:28:26 [INFO] [System] MILP Fallback successful (Latency: 0.85ms).
+2026-08-30 02:28:26 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 6276085.41ms) ---
+2026-08-30 02:28:26 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 8
+==================================================
+2026-08-30 02:28:26 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-30 02:28:26 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1) using S2 Edge CPU...
+2026-08-30 02:31:08 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 02:49:36 [INFO] [System] Z3 Verification Failed: Constraint Violated [RoomCapacity]: Course C15 (demand=198) exceeds room R_15 capacity (55).
+2026-08-30 02:49:36 [INFO] [Agent: Resolver] Analyzing Z3 rejection trace: Constraint Violated [RoomCapacity]: Course C15 (demand=198) exceeds room R_15 capacity (55).
+2026-08-30 02:49:36 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 2) using S2 Edge CPU...
+2026-08-30 02:52:17 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 03:28:45 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C15", "room": "R_16", "faculty": "F_17", "time": "T_Fri_1", "enrollment": 198}, {"course": "C16", "room": "R_17", "fa... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 03:28:45 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 3) using S2 Edge CPU...
+2026-08-30 03:31:27 [INFO] HTTP Request: POST http://172.17.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-08-30 04:03:39 [INFO] [Agent: Scheduler] API/Validation Failed: Failed to parse InstitutionalSchedule from completion {"allocations": [{"course": "C0", "room": "R_0", "faculty": "F_0", "time": "T_Mon_1", "enrollment": 116}, {"course": "C1", "room": "R_1", "faculty... [TRUNCATED TO PREVENT RAM FREEZE]
+2026-08-30 04:03:39 [INFO] [System] ALERT: Agentic layer exhausted 3 retries. Triggering MILP Fallback.
+2026-08-30 04:03:39 [INFO] [System] MILP Fallback successful (Latency: 0.60ms).
+2026-08-30 04:03:39 [INFO] --- Cycle Complete: FALLBACK_OPTIMIZED (Total Time: 5713134.36ms) ---
+2026-08-30 04:03:40 [INFO] 
+Full simulation telemetry saved to: /workspace/notebooks/WP34-AgenticAI/analysis/full_simulation_telemetry.csv
+2026-08-30 04:03:40 [INFO] Research summary artifacts saved to /workspace/notebooks/WP34-AgenticAI/analysis
+2026-08-30 04:03:40 [INFO] 
+==================================================
+PIPELINE EXECUTION COMPLETE
+Total Runtime: 54241.71 seconds
+==================================================
