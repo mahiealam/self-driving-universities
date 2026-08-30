@@ -1,0 +1,13 @@
+{
+    "experiment_name": "Verified_MAS_Stress_Test",
+    "execution_date": "2026-08-30 04:03:40",
+    "hardware_assumed": "NVIDIA RTX 2000 Ada, 32 Cores, 64GB RAM",
+    "total_runtime_seconds": 54241.71,
+    "datasets_processed": [
+        "Univ_A_Centralized",
+        "Univ_B_Elective"
+    ],
+    "total_semesters_simulated": 16,
+    "mean_cycle_latency_ms": 3385821.33,
+    "fallback_trigger_rate": 68.75
+}
