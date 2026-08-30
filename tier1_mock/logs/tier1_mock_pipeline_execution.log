@@ -1,0 +1,226 @@
+2026-08-27 09:23:31 [INFO] Directory structure initialized in d:\Research\WP34
+2026-08-27 09:23:31 [INFO] Logging active. Output is being saved to d:\Research\WP34\logs\pipeline_execution.log
+2026-08-27 09:23:31 [INFO] Matplotlib and Seaborn configured for 300 DPI journal-ready exports.
+2026-08-27 09:23:31 [INFO] Reproducibility protocol enforced. Global Seed: 42
+2026-08-27 09:23:31 [INFO] Block 1 Execution Complete.
+2026-08-27 09:23:31 [INFO] YAML Configuration successfully parsed.
+2026-08-27 09:23:31 [INFO] 
+--- Active Institutional Datasets ---
+2026-08-27 09:23:31 [INFO] [1] Univ_A_Centralized (Nodes: 80, Edges: 120)
+2026-08-27 09:23:31 [INFO] [2] Univ_B_Elective (Nodes: 120, Edges: 60)
+2026-08-27 09:23:31 [INFO] 
+Configuration snapshot saved to: d:\Research\WP34\checkpoints\experiment_config_snapshot.json
+2026-08-27 09:23:31 [INFO] Block 2 Execution Complete.
+2026-08-27 09:23:31 [INFO] 
+--- Generating Institutional Graphs ---
+2026-08-27 09:23:31 [INFO] Generating DAG for Univ_A_Centralized...
+2026-08-27 09:23:31 [INFO]   -> Generated: 80 courses, 120 prerequisites.
+2026-08-27 09:23:31 [INFO]   -> Max Prerequisite Depth: 10
+2026-08-27 09:23:31 [INFO] Saved topology figure: d:\Research\WP34\figures\Univ_A_Centralized_topology.png
+2026-08-27 09:23:31 [INFO] Generating DAG for Univ_B_Elective...
+2026-08-27 09:23:31 [INFO]   -> Generated: 120 courses, 60 prerequisites.
+2026-08-27 09:23:31 [INFO]   -> Max Prerequisite Depth: 3
+2026-08-27 09:23:31 [INFO] Saved topology figure: d:\Research\WP34\figures\Univ_B_Elective_topology.png
+2026-08-27 09:23:31 [INFO] 
+Block 3 Execution Complete.
+2026-08-27 09:23:31 [INFO] 
+--- Saving Graph Data and Generating Populations ---
+2026-08-27 09:23:31 [INFO] [Univ_A_Centralized] Saved curriculum graph to d:\Research\WP34\datasets\Univ_A_Centralized_curriculum.graphml
+2026-08-27 09:23:31 [INFO] [Univ_A_Centralized] Generating 10000 synthetic students...
+2026-08-27 09:23:31 [INFO] [Univ_A_Centralized] Saved synthetic population to d:\Research\WP34\datasets\Univ_A_Centralized_students.csv
+2026-08-27 09:23:32 [INFO] Saved population distribution figure: d:\Research\WP34\figures\Univ_A_Centralized_population_stats.png
+2026-08-27 09:23:32 [INFO] [Univ_B_Elective] Saved curriculum graph to d:\Research\WP34\datasets\Univ_B_Elective_curriculum.graphml
+2026-08-27 09:23:32 [INFO] [Univ_B_Elective] Generating 10000 synthetic students...
+2026-08-27 09:23:32 [INFO] [Univ_B_Elective] Saved synthetic population to d:\Research\WP34\datasets\Univ_B_Elective_students.csv
+2026-08-27 09:23:32 [INFO] Saved population distribution figure: d:\Research\WP34\figures\Univ_B_Elective_population_stats.png
+2026-08-27 09:23:32 [INFO] 
+Block 4 Execution Complete.
+2026-08-27 09:23:32 [INFO] 
+--- Executing Z3 Formal Verification Benchmark ---
+2026-08-27 09:23:49 [INFO] Exported verification benchmark dataset to: d:\Research\WP34\analysis\z3_verification_benchmark.csv
+2026-08-27 09:23:50 [INFO] Saved 300 DPI publication figure: d:\Research\WP34\figures\z3_verification_benchmark.png
+2026-08-27 09:23:50 [INFO] Block 5 Execution Complete.
+2026-08-27 09:23:50 [INFO] Updated Block 6 & 7 Execution Complete.
+2026-08-27 09:23:50 [INFO] 
+Executing Unit Test for Block 8 Control Loop...
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 4.84ms) ---
+2026-08-27 09:23:50 [INFO] 
+Metrics Output:
+2026-08-27 09:23:50 [INFO]   llm_attempts: 1
+2026-08-27 09:23:50 [INFO]   z3_verification_calls: 1
+2026-08-27 09:23:50 [INFO]   z3_total_latency_ms: 2.4701000074855983
+2026-08-27 09:23:50 [INFO]   fallback_triggered: False
+2026-08-27 09:23:50 [INFO]   final_status: MAS_VERIFIED
+2026-08-27 09:23:50 [INFO]   total_cycle_latency_ms: 4.836300009628758
+2026-08-27 09:23:50 [INFO] 
+Block 8 Execution Complete.
+2026-08-27 09:23:50 [INFO] 
+
+############################################################
+Booting Simulation Environment for Univ_A_Centralized
+############################################################
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 1
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 38.10ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 2
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 36.62ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 3
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 24.97ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 4
+==================================================
+2026-08-27 09:23:50 [INFO] [Univ_A_Centralized] !!! INJECTING STRUCTURAL SHOCK: 20% Classroom Loss !!!
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 46.76ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 5
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 32.87ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 6
+==================================================
+2026-08-27 09:23:50 [INFO] [Univ_A_Centralized] !!! INJECTING RESOURCE SHOCK: 20% Faculty Loss !!!
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 27.73ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 7
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 26.85ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_A_Centralized] Initiating Semester 8
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 31.01ms) ---
+2026-08-27 09:23:50 [INFO] 
+
+############################################################
+Booting Simulation Environment for Univ_B_Elective
+############################################################
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 1
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 42.60ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 2
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 41.78ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 3
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 36.14ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 4
+==================================================
+2026-08-27 09:23:50 [INFO] [Univ_B_Elective] !!! INJECTING STRUCTURAL SHOCK: 20% Classroom Loss !!!
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 37.43ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 5
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 39.19ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 6
+==================================================
+2026-08-27 09:23:50 [INFO] [Univ_B_Elective] !!! INJECTING RESOURCE SHOCK: 20% Faculty Loss !!!
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:50 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:50 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 34.64ms) ---
+2026-08-27 09:23:50 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 7
+==================================================
+2026-08-27 09:23:50 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:50 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:51 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:51 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 50.62ms) ---
+2026-08-27 09:23:51 [INFO] 
+==================================================
+[Univ_B_Elective] Initiating Semester 8
+==================================================
+2026-08-27 09:23:51 [INFO] 
+--- Starting Autonomous Institutional Cycle ---
+2026-08-27 09:23:51 [INFO] [Agent: Scheduler] Generating allocation proposal (Attempt 1)...
+2026-08-27 09:23:51 [INFO] [System] Z3 Verification Passed on attempt 1.
+2026-08-27 09:23:51 [INFO] --- Cycle Complete: MAS_VERIFIED (Total Time: 44.58ms) ---
+2026-08-27 09:23:51 [INFO] 
+Full simulation telemetry saved to: d:\Research\WP34\analysis\full_simulation_telemetry.csv
+2026-08-27 09:23:51 [INFO] Research summary artifacts saved to d:\Research\WP34\analysis
+2026-08-27 09:23:51 [INFO] 
+==================================================
+PIPELINE EXECUTION COMPLETE
+Total Runtime: 20.06 seconds
+==================================================
