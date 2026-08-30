@@ -1,0 +1,10 @@
+{
+    "experiment_name": "Verified_MAS_Stress_Test",
+    "total_runtime_seconds": 23127.26,
+    "datasets_processed": [
+        "Univ_A_Centralized",
+        "Univ_B_Elective"
+    ],
+    "mean_cycle_latency_ms": 1445372.38,
+    "fallback_trigger_rate": 81.25
+}
