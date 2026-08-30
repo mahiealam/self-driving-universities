@@ -1,0 +1,670 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="node" attr.name="level" attr.type="long" />
+  <key id="d2" for="node" attr.name="credits" attr.type="long" />
+  <key id="d1" for="node" attr.name="capacity" attr.type="long" />
+  <key id="d0" for="graph" attr.name="name" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="C0">
+      <data key="d1">63</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C1">
+      <data key="d1">99</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C2">
+      <data key="d1">64</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C3">
+      <data key="d1">99</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C4">
+      <data key="d1">86</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C5">
+      <data key="d1">78</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C6">
+      <data key="d1">108</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C7">
+      <data key="d1">105</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C8">
+      <data key="d1">87</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C9">
+      <data key="d1">57</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C10">
+      <data key="d1">91</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C11">
+      <data key="d1">63</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C12">
+      <data key="d1">89</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C13">
+      <data key="d1">46</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C14">
+      <data key="d1">71</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C15">
+      <data key="d1">75</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C16">
+      <data key="d1">73</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C17">
+      <data key="d1">94</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C18">
+      <data key="d1">59</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C19">
+      <data key="d1">29</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C20">
+      <data key="d1">96</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C21">
+      <data key="d1">112</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C22">
+      <data key="d1">74</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C23">
+      <data key="d1">83</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C24">
+      <data key="d1">84</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C25">
+      <data key="d1">105</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C26">
+      <data key="d1">93</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C27">
+      <data key="d1">87</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C28">
+      <data key="d1">58</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C29">
+      <data key="d1">74</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C30">
+      <data key="d1">80</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C31">
+      <data key="d1">62</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C32">
+      <data key="d1">84</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C33">
+      <data key="d1">77</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C34">
+      <data key="d1">77</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C35">
+      <data key="d1">107</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C36">
+      <data key="d1">68</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C37">
+      <data key="d1">62</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C38">
+      <data key="d1">101</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C39">
+      <data key="d1">51</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C40">
+      <data key="d1">88</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C41">
+      <data key="d1">90</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C42">
+      <data key="d1">71</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C43">
+      <data key="d1">43</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C44">
+      <data key="d1">100</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C45">
+      <data key="d1">75</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C46">
+      <data key="d1">75</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C47">
+      <data key="d1">78</data>
+      <data key="d2">4</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C48">
+      <data key="d1">92</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C49">
+      <data key="d1">64</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C50">
+      <data key="d1">69</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C51">
+      <data key="d1">65</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C52">
+      <data key="d1">101</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C53">
+      <data key="d1">69</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C54">
+      <data key="d1">77</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C55">
+      <data key="d1">70</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C56">
+      <data key="d1">86</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C57">
+      <data key="d1">64</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C58">
+      <data key="d1">68</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C59">
+      <data key="d1">59</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C60">
+      <data key="d1">105</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C61">
+      <data key="d1">57</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C62">
+      <data key="d1">105</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C63">
+      <data key="d1">54</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C64">
+      <data key="d1">82</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C65">
+      <data key="d1">95</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C66">
+      <data key="d1">78</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C67">
+      <data key="d1">102</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C68">
+      <data key="d1">70</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C69">
+      <data key="d1">101</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C70">
+      <data key="d1">83</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C71">
+      <data key="d1">72</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C72">
+      <data key="d1">82</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C73">
+      <data key="d1">92</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C74">
+      <data key="d1">59</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C75">
+      <data key="d1">70</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C76">
+      <data key="d1">66</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C77">
+      <data key="d1">69</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C78">
+      <data key="d1">79</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C79">
+      <data key="d1">73</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C80">
+      <data key="d1">94</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C81">
+      <data key="d1">71</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C82">
+      <data key="d1">86</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C83">
+      <data key="d1">100</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C84">
+      <data key="d1">88</data>
+      <data key="d2">4</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C85">
+      <data key="d1">98</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C86">
+      <data key="d1">83</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C87">
+      <data key="d1">80</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C88">
+      <data key="d1">66</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C89">
+      <data key="d1">81</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C90">
+      <data key="d1">92</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C91">
+      <data key="d1">78</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C92">
+      <data key="d1">94</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C93">
+      <data key="d1">89</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C94">
+      <data key="d1">81</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C95">
+      <data key="d1">72</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C96">
+      <data key="d1">52</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C97">
+      <data key="d1">93</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C98">
+      <data key="d1">53</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C99">
+      <data key="d1">102</data>
+      <data key="d2">2</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C100">
+      <data key="d1">68</data>
+      <data key="d2">4</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C101">
+      <data key="d1">105</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C102">
+      <data key="d1">81</data>
+      <data key="d2">3</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C103">
+      <data key="d1">85</data>
+      <data key="d2">4</data>
+      <data key="d3">3</data>
+    </node>
+    <node id="C104">
+      <data key="d1">60</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C105">
+      <data key="d1">60</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C106">
+      <data key="d1">47</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C107">
+      <data key="d1">87</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C108">
+      <data key="d1">61</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C109">
+      <data key="d1">62</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C110">
+      <data key="d1">81</data>
+      <data key="d2">2</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C111">
+      <data key="d1">109</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C112">
+      <data key="d1">82</data>
+      <data key="d2">4</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C113">
+      <data key="d1">68</data>
+      <data key="d2">3</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="C114">
+      <data key="d1">79</data>
+      <data key="d2">3</data>
+      <data key="d3">3</data>
+    </node>
+    <node id="C115">
+      <data key="d1">80</data>
+      <data key="d2">3</data>
+      <data key="d3">3</data>
+    </node>
+    <node id="C116">
+      <data key="d1">76</data>
+      <data key="d2">2</data>
+      <data key="d3">3</data>
+    </node>
+    <node id="C117">
+      <data key="d1">81</data>
+      <data key="d2">2</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="C118">
+      <data key="d1">93</data>
+      <data key="d2">3</data>
+      <data key="d3">2</data>
+    </node>
+    <node id="C119">
+      <data key="d1">87</data>
+      <data key="d2">2</data>
+      <data key="d3">3</data>
+    </node>
+    <edge source="C2" target="C117" />
+    <edge source="C5" target="C71" />
+    <edge source="C7" target="C33" />
+    <edge source="C14" target="C78" />
+    <edge source="C16" target="C119" />
+    <edge source="C16" target="C29" />
+    <edge source="C17" target="C55" />
+    <edge source="C18" target="C102" />
+    <edge source="C21" target="C42" />
+    <edge source="C23" target="C118" />
+    <edge source="C30" target="C70" />
+    <edge source="C32" target="C85" />
+    <edge source="C32" target="C38" />
+    <edge source="C33" target="C41" />
+    <edge source="C36" target="C47" />
+    <edge source="C38" target="C95" />
+    <edge source="C39" target="C81" />
+    <edge source="C40" target="C46" />
+    <edge source="C43" target="C68" />
+    <edge source="C43" target="C48" />
+    <edge source="C46" target="C47" />
+    <edge source="C50" target="C95" />
+    <edge source="C51" target="C77" />
+    <edge source="C54" target="C63" />
+    <edge source="C58" target="C114" />
+    <edge source="C58" target="C103" />
+    <edge source="C61" target="C91" />
+    <edge source="C63" target="C97" />
+    <edge source="C63" target="C101" />
+    <edge source="C66" target="C107" />
+    <edge source="C67" target="C77" />
+    <edge source="C69" target="C106" />
+    <edge source="C69" target="C75" />
+    <edge source="C69" target="C95" />
+    <edge source="C74" target="C78" />
+    <edge source="C78" target="C84" />
+    <edge source="C78" target="C89" />
+    <edge source="C83" target="C108" />
+    <edge source="C83" target="C111" />
+    <edge source="C85" target="C111" />
+    <edge source="C88" target="C111" />
+    <edge source="C89" target="C103" />
+    <edge source="C93" target="C104" />
+    <edge source="C93" target="C117" />
+    <edge source="C94" target="C118" />
+    <edge source="C96" target="C116" />
+    <edge source="C98" target="C117" />
+    <edge source="C99" target="C112" />
+    <edge source="C100" target="C110" />
+    <edge source="C100" target="C104" />
+    <edge source="C101" target="C103" />
+    <edge source="C106" target="C109" />
+    <edge source="C108" target="C110" />
+    <edge source="C110" target="C114" />
+    <edge source="C110" target="C116" />
+    <edge source="C111" target="C115" />
+    <edge source="C112" target="C116" />
+    <edge source="C117" target="C118" />
+    <edge source="C117" target="C119" />
+    <edge source="C118" target="C119" />
+    <data key="d0">Univ_B_Elective</data>
+  </graph>
+</graphml>
