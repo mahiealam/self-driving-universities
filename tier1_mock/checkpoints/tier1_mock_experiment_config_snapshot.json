@@ -1,0 +1,36 @@
+{
+    "experiment": {
+        "name": "Verified_MAS_Stress_Test",
+        "random_seed": 42,
+        "num_semesters": 8,
+        "synthetic_students_per_univ": 10000,
+        "max_llm_retries": 3,
+        "llm_config": {
+            "model": "gpt-4o-mini",
+            "temperature": 0.1,
+            "max_tokens": 1500
+        },
+        "perturbations": {
+            "demand_shock_semester": 4,
+            "resource_shock_semester": 6
+        }
+    },
+    "datasets": [
+        {
+            "name": "Univ_A_Centralized",
+            "description": "Highly centralized curriculum with strict prerequisite chains.",
+            "nodes": 80,
+            "edges": 120,
+            "capacity_mean": 100,
+            "capacity_std": 20
+        },
+        {
+            "name": "Univ_B_Elective",
+            "description": "Highly elective curriculum with flat prerequisite structures.",
+            "nodes": 120,
+            "edges": 60,
+            "capacity_mean": 80,
+            "capacity_std": 15
+        }
+    ]
+}
